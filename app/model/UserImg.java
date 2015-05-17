@@ -10,7 +10,18 @@ public class UserImg extends Model{
     @Id
     private int id;
     @Constraints.Required
+    private int userId;
+
+    @Constraints.Required
     private String imgpath;
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 
     public int getId() {
         return id;

@@ -12,6 +12,7 @@ create table user (
 
 create table user_img (
   id                        integer auto_increment not null,
+  user_id                   integer,
   imgpath                   varchar(255),
   constraint pk_user_img primary key (id))
 ;

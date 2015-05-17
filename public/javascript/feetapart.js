@@ -159,6 +159,15 @@ $(document).ready(function(){
                     emailId:$("#inputEmail").val()
             },
             success:function(data){
+                $.ajax({
+                    url:'/uploadfile',
+                    type:'POST',
+                    dataType:'json',
+                    data:formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
 
             }
 

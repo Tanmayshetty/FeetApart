@@ -39,5 +39,5 @@ public class User extends Model{
         this.id = id;
     }
 
-    public static Finder find=new Finder(Long.class,User.class);
+    public static Finder<Long,User> find=new Finder(Long.class,User.class);
 }
